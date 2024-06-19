@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@media screen(lg) {
+  .bgHero {
+    width: 300px;
+    z-index: -1;
+    height: 200px;
+    @apply absolute bg-softBlue right-0 bottom-0 rounded-l-full;
+  }
+}
+#menu-btn {
+  transition: all 0.2s;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(-6px);
+}
+.open .hamburger-middle {
+  display: none;
+}
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(5px);
+}
